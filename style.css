@@ -1,0 +1,148 @@
+body
+{
+    text-align: center; /*1st step*/
+    font-family: "Happy Monkey", system-ui;/* 3rd step*/
+    background: #a2d2ff; /*4th step*/
+    color: #ffffff;/*5TH step*/
+    background: linear-gradient(#a2d2ff,#EFB0C9);
+}
+#best-friend-img/*2nd step fx the image by giving a width*/
+{
+    width: 300px; /*2nd step*/
+    border-radius: 50%;/*2nd step*/
+    border: 6px solid #EFB0C9/*6th step*/
+}
+
+h1,h2,h3,h4,p/*7th step--readbility*/
+{
+    text-shadow: 0px 0px 1px black;
+
+}
+#bday-age 
+{
+    background:#EFB0C9;/*8th step--highlighting the text--but it highlights the whole block--so we use flexbox*/
+    padding: 5px 10px;/*10th step*/
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+#bday-date
+{
+    
+    
+    background:#EFB0C9;/*highlighting the text*/
+    padding: 5px 10px; /*10th step*/
+    border-radius: 5px;
+
+    margin: 0px;
+}
+#header/*9th step*/
+{
+    display: flex;
+    flex-direction: column;/*by default its row*/
+    align-items: center; /*for column-- x axis is controlled by align items and y by justify content   and for row -- x by justify content, y axis is controlled by align items*/
+}
+.gift-image
+{
+    width: 500px;
+    border: 6px solid #EFB0C9;
+    border-radius: 10px;
+    height: 400px;
+    background-image: url("gift image.jpeg");
+    background-size: cover;
+    margin: 0 auto 0 auto;
+}
+.gift-title
+{
+    margin-bottom: 10px;
+}
+.gift-hint
+{
+    margin-top: 0px;
+}
+.gift-section
+{
+    margin-top: 50px; /*13th step--giving space between the gift section and the header*/
+}
+#gift-image-happy:hover
+{
+    background-image: url("https://media.tenor.com/Py95oEQIp5MAAAAM/pikachu-happy.gif");
+    background-size: cover;
+}
+#gift-image-todoroki:hover
+{
+    width: 800px; /*override*/
+    background-image: url("https://media.tenor.com/BE8SYRkuz3kAAAAM/happy-birthday-anime-anime-birthday.gif");
+    background-size: cover;
+}
+#gift-image-genius:hover
+{
+    background-image: url("https://media1.tenor.com/m/FBbCjwQFI94AAAAd/drake-genius.gif");
+    background-size: cover;
+}
+#gift-image-cheers:hover
+{
+    height:300px;
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzl0cG5nZWZzMDZsMzFzeDg2NWo5eGQ1bDRpN3JydG5sc2JrcGlrMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BPJmthQ3YRwD6QqcVD/giphy.gif");
+    background-size: cover; 
+   
+}
+#footer
+{
+    width: 400px;
+    margin-left: auto; /*to center*/
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/*1st step allign everything to center*/
+/*2nd step fx the image by giving a width*/
+/*3rd step import font family from google fonts*/
+/*4th step give the blue color background*/
+/*5th step giving white color to the text*/
+/*6th step giving border of pink to the image*/
+/*7th step--readbility, using the text-shadow.. blur attribute*/
+/*8th step--highlighting the text--but it highlights the whole block--so we use flexbox*/
+/*9th step--flexbox gives us the ability to stack the direct child elements vertically or horizontally,
+by default its row(horizantally stacked) by flex-direction we changed it to column
+and then applied align-items to center the elements(in the x axix)
+
+10th step- styling the bday age and bday date-- 
+giving padding(top-bottom (lesser than) left-right) and border radius
+11th step--margin
+we first removed the margin for date to see how it looks
+the applied margin top and bottom to the age
+
+12th step--adding a gift section, h2 h3 and image
+styling the image now
+1.applied width to get suitable size we want
+2.applied border
+3. border raidius
+
+13th step--giving space between the gift section and the header
+and also giving space between gift title and gift hint
+
+14th step--adding a background image instead of a image so that we render the hover effect
+1. remove the img tag and src attribute and use div tag instead
+2. keep the image class in div container and give a background image through css
+3. first, since its an empty div now.. it will look like a single like block
+so we need to give it a height: 400px so that it looks like a square
+4: now that we got a square we will add background image..after adding it will not look as we want it to be
+so always use our good old frien background-size: cover
+5. now its not alligned in the center.because text-align: center; only works for inline elemnets..and div is block
+so we since its already in block we can use our first method of centering...margin auto on left and right. and width is already given 
+
+15th step--adding the hover effect
+create an id called gift-image-happy
+and use #gift-image-happy:hover --- to give an hover effect only to the first image in the gift section
+if we use class for hover then it will work for all the images but we dont want that so we use an id but keep the class because its giving various properties to the image
+now copy paste the gift section for the second gift
+and change h2, and change the id to gift-image-todoroki, in the css use #gift-image-todoroki to apply hover and so on!!
+
+also in the id we can change the width and height of the gift.. for that temporary gift.. this is called overridin 
+
+16th step --add footer*/
+
